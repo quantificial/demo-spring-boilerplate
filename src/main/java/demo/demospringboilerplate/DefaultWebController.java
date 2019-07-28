@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,11 +21,20 @@ public class DefaultWebController {
 	
     private String appMode;
 
+    /**
+     * to show how to get the environment variable
+     * @param environment
+     */
     @Autowired
     public DefaultWebController(Environment environment){
         appMode = environment.getProperty("app-mode");
     }
     
+    /**
+     * list out all the header for the incoming request
+     * @param headers
+     * @return
+     */
     @RequestMapping("/listHeaders")
     public ResponseEntity<String> listAllHeaders(@RequestHeader Map<String, String> headers) {
         headers.forEach((key, value) -> {
@@ -35,7 +45,23 @@ public class DefaultWebController {
      
         return new ResponseEntity<String>(String.format("Listed %d headers", headers.size()), HttpStatus.OK);
     }
+    
+    /**
+     * response the request with custom header
+     * @return
+     */
+    @GetMapping("/customHeader")
+    ResponseEntity<String> customHeader() {
+        return ResponseEntity.ok()
+            .header("Custom-Header", "foo")
+            .body("Custom header set");
+    }
 
+    /**
+     * default landing page
+     * @param model
+     * @return
+     */
     @RequestMapping("/")
     public String index(Model model){
     	
