@@ -1,0 +1,21 @@
+15:43:55.809 [main] INFO demo.demospringboilerplate.DemoSpringBoilerplateApplication - java version: 11.0.3
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-08-07 15:43:56.229  INFO 12651 --- [           main] d.d.DemoSpringBoilerplateApplication     : Starting DemoSpringBoilerplateApplication v0.0.1-SNAPSHOT on I7-LUX-MINT with PID 12651 (/mnt/ssd512b/projects/demo-spring-boilerplate/target/demo-spring-boilerplate-0.0.1-SNAPSHOT.jar started by foosi in /mnt/ssd512b/projects/demo-spring-boilerplate)
+2019-08-07 15:43:56.230  INFO 12651 --- [           main] d.d.DemoSpringBoilerplateApplication     : No active profile set, falling back to default profiles: default
+2019-08-07 15:43:57.193  INFO 12651 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9080 (http)
+2019-08-07 15:43:57.216  INFO 12651 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-07 15:43:57.216  INFO 12651 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-07 15:43:57.277  INFO 12651 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-07 15:43:57.277  INFO 12651 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1007 ms
+2019-08-07 15:43:57.452  INFO 12651 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-07 15:43:57.594  INFO 12651 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-07 15:43:57.680  INFO 12651 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9080 (http) with context path ''
+2019-08-07 15:43:57.683  INFO 12651 --- [           main] d.d.DemoSpringBoilerplateApplication     : Started DemoSpringBoilerplateApplication in 1.769 seconds (JVM running for 2.057)
